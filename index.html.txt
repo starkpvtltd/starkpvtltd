@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My Small Business</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 id="business-name">Your Business Name</h1>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="container">
+      <h2>Welcome to <span id="biz-short">Your Business</span></h2>
+      <p id="hero-text">We provide great products/services. Short tagline here.</p>
+      <a class="btn" href="#contact">Get in touch</a>
+    </section>
+
+    <section id="about" class="container card">
+      <h3>About Us</h3>
+      <p>Write 2–3 lines about your business, what makes you special, and your experience.</p>
+    </section>
+
+    <section id="services" class="container card">
+      <h3>Services</h3>
+      <ul>
+        <li>Service One — short description</li>
+        <li>Service Two — short description</li>
+        <li>Service Three — short description</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="container card">
+      <h3>Contact</h3>
+      <p>Email: <a href="mailto:you@example.com" id="email">you@example.com</a></p>
+      <p>Phone: <span id="phone">+91-XXXXXXXXXX</span></p>
+      <p>Address: <span id="address">Your address</span></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> <span id="business-name-footer">Your Business Name</span>. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
